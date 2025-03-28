@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class UIButtonClick : MonoBehaviour
 {
     public Button Inventory;
+    public GameObject inven;
 
     void Start()
     {
