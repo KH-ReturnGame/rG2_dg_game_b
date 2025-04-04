@@ -12,13 +12,11 @@ public class Inventory : MonoBehaviour
     }
     void Open()
     {
-        Debug.Log("open");
         Inventory_UI.SetActive(true);
     }
 
     void Close()
     {
-        Debug.Log("close");
         Inventory_UI.SetActive(false);
     }
     void Update()
