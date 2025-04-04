@@ -2,19 +2,16 @@ using UnityEngine;
 
 public class Enable_Check : MonoBehaviour
 {
-    public GameObject Inventory_UI;
-    public GameObject player;
+    
     void OnDisable()
     {
-        player.GetComponent<player_movement>().enabled = false;
-        Debug.Log("이동 불가");
-        
+        Time.timeScale = 1;
+        Debug.Log("움직임");
     }
 
     void OnEnable()
     {
-        player.GetComponent<player_movement>().enabled = true;
-        Debug.Log("이동 가능능");
-        
+        Time.timeScale = 0;
+        Debug.Log("정지");
     }
 }
